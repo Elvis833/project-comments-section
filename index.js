@@ -66,3 +66,18 @@ const data= {
       }
     ]
   }
+
+  function renderComments(comments) {
+    const commentSection = document.getElementById('commentSection');
+  }
+
+
+
+
+
+  document.addEventListener('click', function(event) {
+    if (event.target.closest('.delete')) {
+      const commentContainer = event.target.closest('.comment-container');
+      commentContainer.remove();
+    }
+  });
